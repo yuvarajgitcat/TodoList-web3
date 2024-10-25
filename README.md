@@ -7,7 +7,7 @@
 
 ## Architecture
 
-![alt text](https://raw.githubusercontent.com/syedmuhamaddanish/To-Do-List-BlockChain-NextJS/main/to-do-01.jpg)
+![alt text](to-do-01.jpg)
 
 ## Installation
 
