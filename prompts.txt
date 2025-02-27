@@ -1,0 +1,98 @@
+Process and Development Flow:
+
+1. Project Setup:
+
+Create a new ASP.NET Core web application.
+
+Set up a basic Razor Pages project.
+
+
+
+2. Data Management Setup:
+
+Use a JSON file (e.g., products.json) to store product data temporarily.
+
+Create a Models folder to define a Product class with fields like ID, Maker, and Image URL.
+
+Use JSON serialization and deserialization to read and write product data.
+
+
+
+3. Service Creation (Single Responsibility Principle):
+
+Create a Services folder and add a JsonFileProductService class.
+
+This service will be responsible for reading product data from the JSON file and converting it into a list of Product objects.
+
+Register this service in ASP.NET Core’s dependency injection container so it can be injected into Razor Pages.
+
+
+
+4. Razor Page Integration:
+
+Inject the JsonFileProductService into a Razor Page Model.
+
+Fetch product data using the service and pass it to the Razor Page for rendering.
+
+Use Razor syntax to dynamically display product data (like product name, image, and description) in HTML.
+
+
+
+5. Bootstrap and CSS Integration:
+
+Use Bootstrap’s card layout (like card-columns) to display products in a visually appealing way.
+
+Create a CSS file to apply custom styles.
+
+Integrate Google Fonts for better typography.
+
+
+
+6. Layout Management:
+
+Set up a shared layout file to define consistent design elements (like navbar, footer) across all pages.
+
+Use Razor layout features to ensure each page inherits the main layout.
+
+
+
+7. Debugging and Troubleshooting:
+
+Use browser inspect tools to troubleshoot CSS issues (e.g., image not displaying properly, fonts not applied correctly).
+
+Add basic error handling to deal with potential issues like missing data, null references, or JSON parsing errors.
+
+
+
+8. Iterative Enhancement:
+
+After successfully displaying data, gradually enhance the UI with better styling, responsive design, and aesthetic improvements.
+
+Emphasize clean separation of concerns by keeping data, business logic, and presentation code isolated into appropriate folders.
+
+
+
+
+
+---
+
+Best Practices to Follow:
+
+Apply Single Responsibility Principle throughout.
+
+Keep folder structure clear with separation into Models, Services, Pages, and wwwroot (static files).
+
+Use Dependency Injection consistently to inject services.
+
+Use Razor syntax effectively to blend HTML and C#.
+
+Focus on maintainability so future changes (like switching from JSON to a real database) are easy.
+
+Use GitHub for version control and keep commits meaningful, showing progress through these stages.
+
+
+
+---
+
+Final Goal:
+The result should be a well-structured, beginner-friendly ASP.NET Core application that loads product data from a JSON file, displays it in a responsive grid, uses a consistent layout, and follows good architectural principle
